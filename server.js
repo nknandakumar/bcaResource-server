@@ -108,5 +108,5 @@ app.use(errorHandler);
 
 // Server Initialization
 app.listen(port, () => {
-  console.log(`server stated`);
+  console.log(`server is stated `);
 });
