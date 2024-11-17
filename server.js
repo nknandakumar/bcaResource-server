@@ -29,7 +29,7 @@ const errorHandler = (err, req, res, next) => {
 app.get("/", async (req, res, next) => {
   try {
     const { rows } = await db.query("SELECT * FROM semesters");
-    res.json(rows);
+    res.json(rows); 
   } catch (error) {
     next({ status: 500, message: "Failed to fetch semesters" });
   }
